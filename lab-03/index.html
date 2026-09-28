@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web technologies practice: basic HTML tags</title>
+</head>
+<body>
+    <header><h1 align="center">Web technologies practice: basic HTML tags </h1></header>
+    <main>
+        <h2>Індивідуальні завдання: </h2>
+        <ul>
+            <li><a href="project_parts/table.html" target="_blank"><p style="font-size: 16px;">Завдання 1.</p></a></li>
+            <li><a href="project_parts/task2.html" target="_blank"><p style="font-size: 16px;">Завдання 2.</p></a></li>
+            <li><a href="project_parts/task3.html" target="_blank"><p style="font-size: 16px;">Завдання 3.</p></a></li>
+            <li><a href="project_parts/task4.html" target="_blank"><p style="font-size: 16px;">Завдання 4.</p></a></li>
+            <li><a href="project_parts/task5.html" target="_blank"><p style="font-size: 16px;">Завдання 5.</p></a></li>
+        </ul>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
+
+<!-- Верхня смуга (займає 3 колонки) -->
+<tr height="50">
+    <td colspan="3" bgcolor="#00f5d4"></td>
+</tr>
+
+<!-- Середній рядок: боковини + ЦЕНТР -->
+<tr>
+    <td width="50" bgcolor="#fffff0"></td>
+
+    <!-- Ось сюди вставляємо наступну таблицю! -->
+    <td align="center" valign="middle">
+
+        <!-- 2. ВНУТРІШНЯ ТАБЛИЦЯ (Шар 2) -->
+        <table border="2" width="100%" height="100%" cellpadding="0" cellspacing="0">
+            <tr height="40">
+                <td colspan="3" bgcolor="#00f5d4"></td>
+            </tr>
+            <tr>
+                <td width="40" bgcolor="#fffff0"></td>
+
+                <!-- Тут буде Шар 3 -->
+                <td align="center">
+                    <table border="2" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                        <tr height="40">
+                            <td colspan="3" bgcolor="#00f5d4"></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td width="40" bgcolor="#fffff0"></td>
+            </tr>
+            <tr height="40">
+                <td colspan="3" bgcolor="#00f5d4"></td>
+            </tr>
+        </table>
+
+    </td>
+
+    <td width="50" bgcolor="#fffff0"></td>
+</tr>
+
+<!-- Нижня смуга (займає 3 колонки) -->
+<tr height="50">
+    <td colspan="3" bgcolor="#00f5d4"></td>
+</tr>
+</table>

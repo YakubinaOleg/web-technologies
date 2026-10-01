@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3 - Розклади</title>
+</head>
+<body>
+    <h1 align="center">Анкета користувача</h1>
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+
+        <fieldset>
+            <legend>Особисті та контактні дані</legend>
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" autocomplete="off" pattern="[a-zA-Z0-9.]+@gmail\.com" required tabindex="1" />
+
+            <label for="phone">Ваш телефон:</label>
+            <input type="tel" id="phone" name="phone" pattern="\+380\d{9}" placeholder="+380XXXXXXXXX" tabindex="2" />
+
+            <label for="pass">Ваш пароль:</label>
+            <input type="password" id="pass" name="pass" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6}" placeholder="6 символів, 'Aoz123'" required tabindex="3" />
+
+            <label for="dat">Дата:</label>
+            <input type="date" id="dat" name="dat" required tabindex="4" />
+
+            <label for="info">ПІБ:</label>
+            <input type="text" id="info" name="info" tabindex="5" />
+        </fieldset>
+        <fieldset>
+            <legend>Освіта та інтереси:</legend>
+
+            <input type="radio" name="edu" id="edu1" value="Bachelor" tabindex="6" />
+            <label for="edu1">Бакалаврат</label>
+
+            <input type="radio" name="edu" id="edu2" value="Master" tabindex="7" />
+            <label for="edu2">Магістратура</label>
+
+            <input type="radio" name="edu" id="edu3" value="Aspirant" tabindex="8" />
+            <label for="edu3">Аспірантура</label>
+
+
+            <p>Сфери інтересів:</p>
+
+            <input type="checkbox" id="c1" name="interests" value="csharp" tabindex="9">
+            <label for="c1">C# / .NET</label>
+
+            <input type="checkbox" id="c2" name="interests" value="python" tabindex="10">
+            <label for="c2">Python</label>
+
+            <input type="checkbox" id="c3" name="interests" value="sql" tabindex="11">
+            <label for="c3">Бази даних / SQL</label>
+
+            <input type="checkbox" id="c4" name="interests" value="git" tabindex="12">
+            <label for="c4">Git / GitHub</label>
+
+            <br />
+            <br />
+
+            <label for="eng">Ваш рівень англійської:</label>
+            <select id="eng" name="eng" tabindex="13">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1" selected>B1</option>
+                <option value="B2">B2</option>
+                <option value="C1">C1</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Спеціалізований вибір та файли</legend>
+
+            <label for="tech-stack">Оберіть технології (можна декілька):</label><br>
+            <select id="tech-stack" name="tech_stack" multiple size="4" tabindex="14">
+                <option value="git">Git / GitHub</option>
+                <option value="docker">Docker / Containers</option>
+                <option value="sql">PostgreSQL / SQL Server</option>
+                <option value="mongo">MongoDB / NoSQL</option>
+                <option value="redis">Redis / Caching</option>
+                <option value="rest">REST API / gRPC</option>
+            </select>
+            <br />
+            <br />
+
+            <label for="main-spec">Основна спеціалізація:</label><br />
+            <select id="main-spec" name="main_spec" tabindex="15">
+                <optgroup label="Backend Development">
+                    <option value="csharp">C# / .NET</option>
+                    <option value="python">Python / FastAPI</option>
+                    <option value="cpp">C++</option>
+                </optgroup>
+
+                <optgroup label="Frontend Development">
+                    <option value="js">JavaScript</option>
+                    <option value="ts">TypeScript</option>
+                    <option value="html_css">HTML / CSS</option>
+                </optgroup>
+
+                <optgroup label="Databases">
+                    <option value="postgres">PostgreSQL</option>
+                    <option value="mssql">MS SQL Server</option>
+                    <option value="mongo">MongoDB</option>
+                </optgroup>
+
+                <optgroup label="DevOps & Tools">
+                    <option value="docker">Docker</option>
+                    <option value="git">Git / GitHub</option>
+                    <option value="linux">Linux / Bash</option>
+                </optgroup>
+            </select>
+            <br />
+            <br />
+
+            <label for="ide-choice">Основне середовище розробки (IDE):</label>
+            <input type="text" id="ide-choice" name="ide" list="ide-list" placeholder="Почніть вводити (напр. Visual Studio)..." tabindex="16">
+
+            <datalist id="ide-list">
+                <option value="Visual Studio"></option>
+                <option value="JetBrains Rider"></option>
+                <option value="VS Code"></option>
+                <option value="CLion"></option>
+                <option value="PyCharm"></option>
+            </datalist>
+
+            <br><br>
+            <label for="audio-files">Завантажити аудіозаписи (можна декілька):</label>
+            <input type="file" id="audio-files" name="audio_files" accept="audio/*" multiple tabindex="17">
+        </fieldset>
+
+        <fieldset>
+            <legend>Додаткова інформація та підтвердження</legend>
+
+            <label for="bio">Додаткові відомості / Про себе:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Розкажіть декілька слів про свій досвід..." tabindex="18"></textarea>
+
+            <br><br>
+            <button type="submit" tabindex="19">Надіслати анкету</button>
+            <input type="reset" value="Очистити форму" tabindex="20">
+
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

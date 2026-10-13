@@ -1,8 +1,8 @@
-.body {
+.recipe {
     text-align: center;
 }
 
-.h1 {
+.recipe-title {
     color: red;
 }
 
@@ -22,11 +22,15 @@
     background-color: yellow;
 }
 
-.italic {
+.recipe-subtitle {
     font-style: italic;
 }
 
-.green_line {
+.recipe-footer {
+    font-style: italic;
+}
+
+.recipe-line {
     height:4px;
     background-color: green;
     width: 60%;

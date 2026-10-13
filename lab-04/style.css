@@ -21,20 +21,20 @@ div
 {
     white-space:nowrap;
 }
-#second_p
+#second-p
 {
     font-weight:bold;
     font-style:italic;
 }
-.shadow_text{
+.shadow-text{
     text-shadow: 5px -5px 3px red;
 }
-.first_d{
+.first-d{
     text-decoration:line-through;
     text-transform:uppercase;
     text-indent: 50px;
 }
-.second_d{
+.second-d{
     letter-spacing:30px;
     word-spacing:50px;
 }

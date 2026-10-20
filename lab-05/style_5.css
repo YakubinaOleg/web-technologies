@@ -1,0 +1,60 @@
+section:nth-of-type(1) div {
+    width: 300px;
+    padding: 20px;
+    display: inline-block;
+    margin: 20px;
+    border: 5px solid #0088cc;
+    background-color: #e3f4fd;
+}
+
+    section:nth-of-type(1) div:nth-of-type(1) {
+         box-sizing: content-box;
+    }
+
+    section:nth-of-type(1) div:nth-of-type(2) {
+        box-sizing: border-box;
+    }
+
+section:nth-of-type(2) div {
+    width:200px;
+    display:inline-block;
+    vertical-align:top;
+    max-height: 80px;
+    border: 2px solid;
+    margin:2px;
+}
+
+    section:nth-of-type(2) div:nth-of-type(1) {
+        overflow: auto;
+    }
+
+    section:nth-of-type(2) div:nth-of-type(2) {
+        overflow: hidden;
+    }
+
+    section:nth-of-type(2) div:nth-of-type(3) {
+        overflow: scroll;
+    }
+
+    section:nth-of-type(2) div:nth-of-type(4) {
+        overflow: visible;
+    }
+
+ul {
+    list-style:none; padding:0px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    display: block;
+    padding: 10px 20px;
+}
+
+li:nth-child(3) {
+    display: none; 
+}
+/* display: none повністю видаляє, 
+   visibility: hidden залишає пусте місце під ним */

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #eef2f7;
+    color: #1f2933;
+}
+
+h1 {
+    color: #1d3557;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center; 
+}
+
+fieldset {
+    background-color: #ffffff;
+}
+
+legend {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+label {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 600;
+}
+
+input, select, textarea, button { 
+    background-color: #f8fafc;
+    color: #1f2933;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+    input::placeholder, textarea::placeholder { 
+        color: #8a94a3;
+    }
+
+    button[type="submit"] {
+        background-color: #1d3557;
+        color: white;
+        font-weight: bold;
+    }
+
+    input[type="reset"] {
+        background-color: #cbd5e1;
+    }
+
+a { 
+    color: #1d3557;
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+optgroup { 
+    font-weight: 900;
+    font-style: normal;
+}

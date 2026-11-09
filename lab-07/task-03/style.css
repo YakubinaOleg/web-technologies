@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+body {
+    margin: 0;
+    background: #eee;
+}
+
+.weather {
+    max-width: 530px;
+    margin: 0 auto;
+    background: white;
+}
+
+
+.current {
+    padding: 20px 24px 24px;
+}
+
+.city {
+    margin: 0;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.date,
+.condition {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
+
+.date {
+    margin-top: 14px;
+}
+
+.current-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 70px;
+}
+
+.current-temp {
+    display: flex;
+    align-items: center;
+}
+
+    .current-temp img {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+.temp {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.unit {
+    align-self: flex-start;
+    margin-top: 15px;
+    margin-left: 6px;
+    font-size: 22px;
+    color: #888;
+}
+
+.details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 300;
+    color: #777;
+}
+
+
+.day {
+    display: flex;
+    align-items: center;
+    height: 94px;
+    border-top: 2px solid #ccc;
+}
+
+    .day > * {
+        flex: 1;
+    }
+
+.day-name {
+    padding-left: 14px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.day-icon {
+    text-align: center;
+}
+
+    .day-icon img {
+        width: 64px;
+        height: 64px;
+    }
+
+.day-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+}
+
+.low {
+    color: #888;
+}
+
+.day-pollen {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    color: #888;
+}
+

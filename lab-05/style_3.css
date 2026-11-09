@@ -1,16 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, "Segoe UI", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #eef2f7;
     color: #1f2933;
+    background-color: #f4f6f9;
 }
 
 h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
     color: #1d3557;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center; 
 }
 
 fieldset {
@@ -18,50 +18,97 @@ fieldset {
 }
 
 legend {
-    background-color: #ffffff;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     color: #1d3557;
+    background-color: #ffffff;
 }
 
-label {
-    font-weight: 600;
+label, p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #52606d;
 }
 
-p {
-    font-weight: 600;
-}
-
-input, select, textarea, button { 
-    background-color: #f8fafc;
-    color: #1f2933;
+input, select, textarea, button {
     font-family: inherit;
     font-size: 15px;
+    color: #1f2933;
+    background-color: #f8fafc;
 }
 
-    input::placeholder, textarea::placeholder { 
-        color: #8a94a3;
+    input::placeholder, textarea::placeholder {
+        color: #9aa5b1;
     }
 
     button[type="submit"] {
         background-color: #1d3557;
-        color: white;
-        font-weight: bold;
+        color: #ffffff;
+        font-weight: 600;
     }
 
     input[type="reset"] {
-        background-color: #cbd5e1;
+        background-color: transparent;
+        color: #52606d;
     }
 
-a { 
+a {
     color: #1d3557;
     text-decoration: none;
 }
 
-a:hover { 
-    text-decoration: underline;
+    a:hover {
+        text-decoration: underline;
+    }
+
+optgroup {
+    font-weight: 700;
+    font-style: normal;
 }
 
-optgroup { 
-    font-weight: 900;
-    font-style: normal;
+form {
+    max-width: 760px;
+    margin: 0 auto 40px;
+}
+
+fieldset {
+    border: 1px solid #e3e8ef;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 16px 20px 20px;
+}
+
+legend {
+    padding: 0 8px;
+}
+
+fieldset:first-of-type label {
+    display: block;
+    margin-top: 12px;
+}
+
+fieldset:first-of-type input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="email"], input[type="tel"], input[type="password"],
+input[type="date"], input[type="text"], select, textarea {
+    border: 1px solid #d5dbe3;
+    border-radius: 6px;
+    padding: 7px 10px;
+}
+
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #1d3557;
+    }
+
+button, input[type="reset"] {
+    border: none;
+    border-radius: 6px;
+    padding: 9px 20px;
+    cursor: pointer;
 }

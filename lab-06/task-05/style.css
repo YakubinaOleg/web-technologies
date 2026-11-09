@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scene {
+    position: relative;
+    width: 780px;
+    height: 615px;
+    margin: 20px auto;
+    background-color: #c4c4c4;
+}
+
+
+.forecast {
+    position: absolute;
+    left: 313px;
+    top: 383px;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 425px;
+    height: 215px;
+    padding: 105px 0 0 25px; 
+    white-space: nowrap; 
+    background-color: #e2e2e2;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.day {
+    display: inline-block;
+    width: 80px;
+}
+
+.day-name {
+    font-size: 18px;
+    color: #888888;
+    opacity: 0.5;
+}
+
+.day-temp {
+    margin-top: 6px;
+    font-size: 32px;
+    color: #333333;
+}
+
+.card {
+    position: absolute;
+    left: 110px;
+    top: 25px;
+    z-index: 2;
+    width: 420px;
+    height: 455px;
+    background-color: #000000;
+}
+
+.temp-big {
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+    font-size: 120px;
+    font-weight: 700;
+    color: #cfcfcf;
+}
+
+.cloud {
+    position: absolute;
+    left: 230px;
+    z-index: 3;
+    width: 470px;
+}
+
+.arrows {
+    position: absolute;
+    left: 28px;
+    top: 160px;
+    z-index: 4;
+    width: 165px;
+    height: 83px;
+    white-space: nowrap;
+    font-size: 0; 
+}
+
+.arrow {
+    width: 82px;
+    height: 83px;
+    font-family: inherit;
+    font-size: 64px;
+    color: #000000;
+    background-color: #8a8a8a;
+    opacity: 0.5;
+}
+
+    .arrow:hover {
+        opacity: 1;
+    }

@@ -5,7 +5,7 @@ body {
 
 .block {
     position: absolute;
-    border: 2px solid solid;
+    border: 2px solid;
     text-align: center;
     box-sizing: border-box;
     padding: 10px 50px 0px;
@@ -26,7 +26,6 @@ body {
     height: 270px;
     background-color: green;
     color: white;
-    z-index: 0;
 
 }
 

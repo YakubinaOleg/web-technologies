@@ -1,0 +1,9 @@
+:root {
+    --white: #ffffff;
+    --text-color: #222222;
+    --gray: #777777;
+    --yellow: #fdd835;
+    --red: #ff6b57;
+    --gap: 15px;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}

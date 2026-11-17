@@ -1,0 +1,34 @@
+body {
+    background-color: var(--white);
+    padding: 15px;
+}
+
+.tree {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-auto-flow: column;
+    gap: 8px;
+    height: 700px;
+    counter-reset: num;
+}
+
+.tree div {
+    background-color: var(--yellow);
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+    counter-increment: num;
+}
+
+
+.tree div::before {
+    content: counter(num);
+}
+
+.level1 { grid-row: span 12; }
+.level2 { grid-row: span 6; }
+.level3 { grid-row: span 4; }
+.level4 { grid-row: span 3; }
+.level5 { grid-row: span 2; }
+.level6 { grid-row: span 1; }
